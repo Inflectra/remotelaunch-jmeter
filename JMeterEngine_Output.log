@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2385" it="0" lt="2384" ct="983" ts="1529586768583" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-1" dt="text" by="594" sby="733" ng="5" na="5"/>
+<httpSample t="1941" it="0" lt="1940" ct="541" ts="1529586769026" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-2" dt="text" by="594" sby="733" ng="5" na="5"/>
+<httpSample t="2196" it="0" lt="2196" ct="498" ts="1529586769530" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-3" dt="text" by="594" sby="733" ng="5" na="5"/>
+<httpSample t="8399" it="0" lt="8399" ct="488" ts="1529586770031" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-4" dt="text" by="594" sby="733" ng="7" na="7"/>
+<httpSample t="9806" it="0" lt="9806" ct="501" ts="1529586770529" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-5" dt="text" by="594" sby="733" ng="6" na="6"/>
+<httpSample t="9988" it="0" lt="9988" ct="469" ts="1529586771025" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-6" dt="text" by="594" sby="733" ng="5" na="5"/>
+<httpSample t="11005" it="0" lt="11005" ct="480" ts="1529586771528" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-7" dt="text" by="594" sby="733" ng="4" na="4"/>
+<httpSample t="11329" it="0" lt="11329" ct="477" ts="1529586772028" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-8" dt="text" by="594" sby="733" ng="3" na="3"/>
+<httpSample t="11072" it="0" lt="11072" ct="491" ts="1529586772530" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-9" dt="text" by="594" sby="733" ng="2" na="2"/>
+<httpSample t="10599" it="0" lt="10599" ct="482" ts="1529586773027" s="true" lb="CarePlan" rc="200" rm="" tn="CarePlan 1-10" dt="text" by="594" sby="734" ng="1" na="1"/>
+
+</testResults>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Inflectra.RemoteLaunch.Engines.JMeter2AutomationEngine.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\jakarta-jmeter-2.5\bin</Value>
+    </Setting>
+    <Setting Name="TraceLogging" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

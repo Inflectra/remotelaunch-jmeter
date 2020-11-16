@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.1">
+<hashTree>
+<TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+<stringProp name="TestPlan.comments"></stringProp>
+<boolProp name="TestPlan.functional_mode">false</boolProp>
+<boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+<elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+<collectionProp name="Arguments.arguments" />
+</elementProp>
+<stringProp name="TestPlan.user_define_classpath"></stringProp>
+</TestPlan>
+<hashTree>
+<ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+<elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+<boolProp name="LoopController.continue_forever">false</boolProp>
+<stringProp name="LoopController.loops">1</stringProp>
+</elementProp>
+<stringProp name="ThreadGroup.num_threads">1</stringProp>
+<stringProp name="ThreadGroup.ramp_time">1</stringProp>
+<longProp name="ThreadGroup.start_time">1281132211000</longProp>
+<longProp name="ThreadGroup.end_time">1281132211000</longProp>
+<boolProp name="ThreadGroup.scheduler">false</boolProp>
+<stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+<stringProp name="ThreadGroup.duration"></stringProp>
+<stringProp name="ThreadGroup.delay"></stringProp>
+</ThreadGroup>
+<hashTree>
+<CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+<collectionProp name="CookieManager.cookies" />
+<boolProp name="CookieManager.clearEachIteration">false</boolProp>
+<stringProp name="CookieManager.policy">rfc2109</stringProp>
+</CookieManager>
+<hashTree />
+<Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+<collectionProp name="Arguments.arguments">
+<elementProp name="VIEWSTATE" elementType="Argument">
+<stringProp name="Argument.name">VIEWSTATE</stringProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+</elementProp>
+<elementProp name="jsessionid" elementType="Argument">
+<stringProp name="Argument.name">jsessionid</stringProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+</elementProp>
+</collectionProp>
+</Arguments>
+<hashTree />
+<HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+<collectionProp name="HeaderManager.headers">
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">User-Agent</stringProp>
+<stringProp xml:space="preserve" name="Header.value">Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)</stringProp>
+</elementProp>
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">Accept</stringProp>
+<stringProp xml:space="preserve" name="Header.value">application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*</stringProp>
+</elementProp>
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">Accept-Language</stringProp>
+<stringProp xml:space="preserve" name="Header.value">en-US</stringProp>
+</elementProp>
+</collectionProp>
+</HeaderManager>
+<hashTree />
+<LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Step 2" enabled="true">
+<boolProp name="LoopController.continue_forever">false</boolProp>
+<stringProp name="LoopController.loops">1</stringProp>
+</LoopController>
+<hashTree>
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="http://www.inflectra.com/">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">http://www.inflectra.com/<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">www.inflectra.com</stringProp>
+<stringProp name="HTTPSampler.port">80</stringProp>
+<stringProp name="HTTPSampler.protocol">http</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="http://www.inflectra.com/SpiraTest/Default.aspx">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">http://www.inflectra.com/SpiraTest/Default.aspx<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">www.inflectra.com</stringProp>
+<stringProp name="HTTPSampler.port">80</stringProp>
+<stringProp name="HTTPSampler.protocol">http</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/SpiraTest/Default.aspx</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="http://www.inflectra.com/Purchase/Default.aspx">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">http://www.inflectra.com/Purchase/Default.aspx<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">www.inflectra.com</stringProp>
+<stringProp name="HTTPSampler.port">80</stringProp>
+<stringProp name="HTTPSampler.protocol">http</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/Purchase/Default.aspx</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://www.inflectra.com/Purchase/Default.aspx">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://www.inflectra.com/Purchase/Default.aspx<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="__EVENTTARGET">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">ctl00$cplMainContent$ddlProducts</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">__EVENTTARGET</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="__EVENTARGUMENT">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">__EVENTARGUMENT</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="__LASTFOCUS">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">__LASTFOCUS</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="__VIEWSTATE">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">/wEPDwUIMzIzOTU1NjMPZBYCZg9kFgICAw9kFgQCAQ9kFggCBQ8WAh4PU3RhcnRpbmdOb2RlVXJsBRAvSG9tZVBhZ2UuYXNweCMxZAIHDxYCHgtfIUl0ZW1Db3VudAIGFhBmD2QWAgIBDw8WCB4PQ29tbWFuZEFyZ3VtZW50BRAvSG9tZVBhZ2UuYXNweCMxHghJbWFnZVVybAUgfi9JbWFnZXMvUHJvZHVjdHNUYWJTZWxlY3RlZC5naWYeDUFsdGVybmF0ZVRleHQFCFByb2R1Y3RzHghTZWxlY3RlZGdkZAIBDxYCHgdWaXNpYmxlaGQCAg9kFgICAQ8PFgYfAgUWL1BhcnRuZXJzL0RlZmF1bHQuYXNweB8DBRh+L0ltYWdlcy9QYXJ0bmVyc1RhYi5naWYfBAUIUGFydG5lcnNkZAIED2QWAgIBDw8WBh8CBRUvU3VwcG9ydC9EZWZhdWx0LmFzcHgfAwUXfi9JbWFnZXMvU3VwcG9ydFRhYi5naWYfBAUHU3VwcG9ydGRkAgYPZBYCAgEPDxYGHwIFFi9UcmFpbmluZy9EZWZhdWx0LmFzcHgfAwUYfi9JbWFnZXMvVHJhaW5pbmdUYWIuZ2lmHwQFCFRyYWluaW5nZGQCCA9kFgICAQ8PFgYfAgUVL0NvbXBhbnkvRGVmYXVsdC5hc3B4HwMFF34vSW1hZ2VzL0NvbXBhbnlUYWIuZ2lmHwQFB0NvbXBhbnlkZAIJDxYCHwZoZAIKDxYCHwZoFgICAQ8PFgYfAgUcL0FkbWluaXN0cmF0aW9uL0RlZmF1bHQuYXNweB8DBR5+L0ltYWdlcy9BZG1pbmlzdHJhdGlvblRhYi5naWYfBAUOQWRtaW5pc3RyYXRpb25kZAIPDzwrAA0CAA8WAh4LXyFEYXRhQm91bmRnZAwUKwAFBQ8wOjAsMDoxLDA6MiwwOjMUKwACFhAeBFRleHQFCVNwaXJhVGVzdB4FVmFsdWUFCVNwaXJhVGVzdB4LTmF2aWdhdGVVcmwFFy9TcGlyYVRlc3QvRGVmYXVsdC5hc3B4HgdUb29sVGlwBQlTcGlyYVRlc3QeB0VuYWJsZWRnHgpTZWxlY3RhYmxlZx4IRGF0YVBhdGgFFy9zcGlyYXRlc3QvZGVmYXVsdC5hc3B4HglEYXRhQm91bmRnFCsADAUsMDowLDA6MSwwOjIsMDozLDA6NCwwOjUsMDo2LDA6NywwOjgsMDo5LDA6MTAUKwACFhAfCAUIT3ZlcnZpZXcfCQUIT3ZlcnZpZXcfCgUZL1NwaXJhVGVzdC9EZWZhdWx0LmFzcHgjMB8LBRBQcm9kdWN0IE92ZXJ2aWV3HwxnHw1nHw4FGS9zcGlyYXRlc3QvZGVmYXVsdC5hc3B4IzAfD2dkFCsAAhYQHwgFDEZlYXR1cmUgVG91ch8JBQxGZWF0dXJlIFRvdXIfCgUaL1NwaXJhVGVzdC9IaWdobGlnaHRzLmFzcHgfCwUMRmVhdHVyZSBUb3VyHwxnHw1nHw4FGi9zcGlyYXRlc3QvaGlnaGxpZ2h0cy5hc3B4Hw9nZBQrAAIWEB8IBQ5UcmlhbHMgJiBEZW1vcx8JBQ5UcmlhbHMgJiBEZW1vcx8KBRQvU3BpcmFUZXN0L0RlbW8uYXNweB8LBQ5UcmlhbHMgJiBEZW1vcx8MZx8NZx8OBRQvc3BpcmF0ZXN0L2RlbW8uYXNweB8PZ2QUKwACFhAfCAUSUHJpY2luZyAmIEVkaXRpb25zHwkFElByaWNpbmcgJiBFZGl0aW9ucx8KBSIvUHVyY2hhc2UvRGVmYXVsdC5hc3B4P3Byb2R1Y3RJZD0xHwsFElByaWNpbmcgJiBFZGl0aW9ucx8MZx8NZx8OBSIvcHVyY2hhc2UvZGVmYXVsdC5hc3B4P3Byb2R1Y3RpZD0xHw9nZBQrAAIWEB8IBQxUZXN0aW1vbmlhbHMfCQUMVGVzdGltb25pYWxzHwoFHC9TcGlyYVRlc3QvVGVzdGltb25pYWxzLmFzcHgfCwUMVGVzdGltb25pYWxzHwxnHw1nHw4FHC9zcGlyYXRlc3QvdGVzdGltb25pYWxzLmFzcHgfD2dkFCsAAhYQHwgFDEZlYXR1cmUgTGlzdB8JBQxGZWF0dXJlIExpc3QfCgUYL1NwaXJhVGVzdC9GZWF0dXJlcy5hc3B4HwsFDEZlYXR1cmUgTGlzdB8MZx8NZx8OBRgvc3BpcmF0ZXN0L2ZlYXR1cmVzLmFzcHgfD2dkFCsAAhYQHwgFDFJlcXVpcmVtZW50cx8JBQxSZXF1aXJlbWVudHMfCgUcL1NwaXJhVGVzdC9SZXF1aXJlbWVudHMuYXNweB8LBQxSZXF1aXJlbWVudHMfDGcfDWcfDgUcL3NwaXJhdGVzdC9yZXF1aXJlbWVudHMuYXNweB8PZ2QUKwACFhAfCAUNRG9jdW1lbnRhdGlvbh8JBQ1Eb2N1bWVudGF0aW9uHwoFHS9TcGlyYVRlc3QvRG9jdW1lbnRhdGlvbi5hc3B4HwsFDURvY3VtZW50YXRpb24fDGcfDWcfDgUdL3NwaXJhdGVzdC9kb2N1bWVudGF0aW9uLmFzcHgfD2dkFCsAAhYQHwgFDFJlbW90ZUxhdW5jaB8JBQxSZW1vdGVMYXVuY2gfCgUaL1JlbW90ZUxhdW5jaC9EZWZhdWx0LmFzcHgfCwUMUmVtb3RlTGF1bmNoHwxnHw1nHw4FGi9yZW1vdGVsYXVuY2gvZGVmYXVsdC5hc3B4Hw9nZBQrAAIWEB8IBRNBZGQtT25zICYgRG93bmxvYWRzHwkFE0FkZC1PbnMgJiBEb3dubG9hZHMfCgUZL1NwaXJhVGVzdC9Eb3dubG9hZHMuYXNweB8LBRNBZGQtT25zICYgRG93bmxvYWRzHwxnHw1nHw4FGS9zcGlyYXRlc3QvZG93bmxvYWRzLmFzcHgfD2dkFCsAAhYQHwgFEkluZHVzdHJ5IFNvbHV0aW9ucx8JBRJJbmR1c3RyeSBTb2x1dGlvbnMfCgUaL1NwaXJhVGVzdC9JbmR1c3RyaWVzLmFzcHgfCwUSSW5kdXN0cnkgU29sdXRpb25zHwxnHw1nHw4FGi9zcGlyYXRlc3QvaW5kdXN0cmllcy5hc3B4Hw9nZBQrAAIWEB8IBQlTcGlyYVBsYW4fCQUJU3BpcmFQbGFuHwoFFy9TcGlyYVBsYW4vRGVmYXVsdC5hc3B4HwsFCVNwaXJhUGxhbh8MZx8NZx8OBRcvc3BpcmFwbGFuL2RlZmF1bHQuYXNweB8PZxQrAAoFIzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcsMDo4FCsAAhYQHwgFCE92ZXJ2aWV3HwkFCE92ZXJ2aWV3HwoFGS9TcGlyYVBsYW4vRGVmYXVsdC5hc3B4IzAfCwUQUHJvZHVjdCBPdmVydmlldx8MZx8NZx8OBRkvc3BpcmFwbGFuL2RlZmF1bHQuYXNweCMwHw9nZBQrAAIWEB8IBQxGZWF0dXJlIFRvdXIfCQUMRmVhdHVyZSBUb3VyHwoFGi9TcGlyYVBsYW4vSGlnaGxpZ2h0cy5hc3B4HwsFDEZlYXR1cmUgVG91ch8MZx8NZx8OBRovc3BpcmFwbGFuL2hpZ2hsaWdodHMuYXNweB8PZ2QUKwACFhAfCAUOVHJpYWxzICYgRGVtb3MfCQUOVHJpYWxzICYgRGVtb3MfCgUUL1NwaXJhUGxhbi9EZW1vLmFzcHgfCwUOVHJpYWxzICYgRGVtb3MfDGcfDWcfDgUUL3NwaXJhcGxhbi9kZW1vLmFzcHgfD2dkFCsAAhYQHwgFElByaWNpbmcgJiBFZGl0aW9ucx8JBRJQcmljaW5nICYgRWRpdGlvbnMfCgUiL1B1cmNoYXNlL0RlZmF1bHQuYXNweD9wcm9kdWN0SWQ9Mh8LBRJQcmljaW5nICYgRWRpdGlvbnMfDGcfDWcfDgUiL3B1cmNoYXNlL2RlZmF1bHQuYXNweD9wcm9kdWN0aWQ9Mh8PZ2QUKwACFhAfCAUMVGVzdGltb25pYWxzHwkFDFRlc3RpbW9uaWFscx8KBRwvU3BpcmFQbGFuL1Rlc3RpbW9uaWFscy5hc3B4HwsFDFRlc3RpbW9uaWFscx8MZx8NZx8OBRwvc3BpcmFwbGFuL3Rlc3RpbW9uaWFscy5hc3B4Hw9nZBQrAAIWEB8IBQxGZWF0dXJlIExpc3QfCQUMRmVhdHVyZSBMaXN0HwoFGC9TcGlyYVBsYW4vRmVhdHVyZXMuYXNweB8LBQxGZWF0dXJlIExpc3QfDGcfDWcfDgUYL3NwaXJhcGxhbi9mZWF0dXJlcy5hc3B4Hw9nZBQrAAIWEB8IBQxSZXF1aXJlbWVudHMfCQUMUmVxdWlyZW1lbnRzHwoFHC9TcGlyYVBsYW4vUmVxdWlyZW1lbnRzLmFzcHgfCwUMUmVxdWlyZW1lbnRzHwxnHw1nHw4FHC9zcGlyYXBsYW4vcmVxdWlyZW1lbnRzLmFzcHgfD2dkFCsAAhYQHwgFDURvY3VtZW50YXRpb24fCQUNRG9jdW1lbnRhdGlvbh8KBR0vU3BpcmFQbGFuL0RvY3VtZW50YXRpb24uYXNweB8LBQ1Eb2N1bWVudGF0aW9uHwxnHw1nHw4FHS9zcGlyYXBsYW4vZG9jdW1lbnRhdGlvbi5hc3B4Hw9nZBQrAAIWEB8IBRNBZGQtT25zICYgRG93bmxvYWRzHwkFE0FkZC1PbnMgJiBEb3dubG9hZHMfCgUZL1NwaXJhUGxhbi9Eb3dubG9hZHMuYXNweB8LBRNBZGQtT25zICYgRG93bmxvYWRzHwxnHw1nHw4FGS9zcGlyYXBsYW4vZG93bmxvYWRzLmFzcHgfD2dkFCsAAhYQHwgFCVNwaXJhVGVhbR8JBQlTcGlyYVRlYW0fCgUXL1NwaXJhVGVhbS9EZWZhdWx0LmFzcHgfCwUJU3BpcmFUZWFtHwxnHw1nHw4FFy9zcGlyYXRlYW0vZGVmYXVsdC5hc3B4Hw9nFCsACwUnMDowLDA6MSwwOjIsMDozLDA6NCwwOjUsMDo2LDA6NywwOjgsMDo5FCsAAhYQHwgFCE92ZXJ2aWV3HwkFCE92ZXJ2aWV3HwoFGS9TcGlyYVRlYW0vRGVmYXVsdC5hc3B4IzAfCwUQUHJvZHVjdCBPdmVydmlldx8MZx8NZx8OBRkvc3BpcmF0ZWFtL2RlZmF1bHQuYXNweCMwHw9nZBQrAAIWEB8IBQxGZWF0dXJlIFRvdXIfCQUMRmVhdHVyZSBUb3VyHwoFGi9TcGlyYVRlYW0vSGlnaGxpZ2h0cy5hc3B4HwsFDEZlYXR1cmUgVG91ch8MZx8NZx8OBRovc3BpcmF0ZWFtL2hpZ2hsaWdodHMuYXNweB8PZ2QUKwACFhAfCAUOVHJpYWxzICYgRGVtb3MfCQUOVHJpYWxzICYgRGVtb3MfCgUUL1NwaXJhVGVhbS9EZW1vLmFzcHgfCwUOVHJpYWxzICYgRGVtb3MfDGcfDWcfDgUUL3NwaXJhdGVhbS9kZW1vLmFzcHgfD2dkFCsAAhYQHwgFElByaWNpbmcgJiBFZGl0aW9ucx8JBRJQcmljaW5nICYgRWRpdGlvbnMfCgUiL1B1cmNoYXNlL0RlZmF1bHQuYXNweD9wcm9kdWN0SWQ9Mx8LBRJQcmljaW5nICYgRWRpdGlvbnMfDGcfDWcfDgUiL3B1cmNoYXNlL2RlZmF1bHQuYXNweD9wcm9kdWN0aWQ9Mx8PZ2QUKwACFhAfCAUMVGVzdGltb25pYWxzHwkFDFRlc3RpbW9uaWFscx8KBRwvU3BpcmFUZWFtL1Rlc3RpbW9uaWFscy5hc3B4HwsFDFRlc3RpbW9uaWFscx8MZx8NZx8OBRwvc3BpcmF0ZWFtL3Rlc3RpbW9uaWFscy5hc3B4Hw9nZBQrAAIWEB8IBQxGZWF0dXJlIExpc3QfCQUMRmVhdHVyZSBMaXN0HwoFGC9TcGlyYVRlYW0vRmVhdHVyZXMuYXNweB8LBQxGZWF0dXJlIExpc3QfDGcfDWcfDgUYL3NwaXJhdGVhbS9mZWF0dXJlcy5hc3B4Hw9nZBQrAAIWEB8IBQxSZXF1aXJlbWVudHMfCQUMUmVxdWlyZW1lbnRzHwoFHC9TcGlyYVRlYW0vUmVxdWlyZW1lbnRzLmFzcHgfCwUMUmVxdWlyZW1lbnRzHwxnHw1nHw4FHC9zcGlyYXRlYW0vcmVxdWlyZW1lbnRzLmFzcHgfD2dkFCsAAhYQHwgFDURvY3VtZW50YXRpb24fCQUNRG9jdW1lbnRhdGlvbh8KBR0vU3BpcmFUZWFtL0RvY3VtZW50YXRpb24uYXNweB8LBQ1Eb2N1bWVudGF0aW9uHwxnHw1nHw4FHS9zcGlyYXRlYW0vZG9jdW1lbnRhdGlvbi5hc3B4Hw9nZBQrAAIWEB8IBQxSZW1vdGVMYXVuY2gfCQUMUmVtb3RlTGF1bmNoHwoFHC9SZW1vdGVMYXVuY2gvRGVmYXVsdC5hc3B4IzAfCwUMUmVtb3RlTGF1bmNoHwxnHw1nHw4FHC9yZW1vdGVsYXVuY2gvZGVmYXVsdC5hc3B4IzAfD2dkFCsAAhYQHwgFE0FkZC1PbnMgJiBEb3dubG9hZHMfCQUTQWRkLU9ucyAmIERvd25sb2Fkcx8KBRkvU3BpcmFUZWFtL0Rvd25sb2Fkcy5hc3B4HwsFE0FkZC1PbnMgJiBEb3dubG9hZHMfDGcfDWcfDgUZL3NwaXJhdGVhbS9kb3dubG9hZHMuYXNweB8PZ2QUKwACFhIfDGcfDWcfD2cfDgUWL3B1cmNoYXNlL2RlZmF1bHQuYXNweB8IBSg8ZGl2IGNsYXNzPSJtZW51U2VsZWN0ZWQiPlB1cmNoYXNlPC9kaXY+HwkFCFB1cmNoYXNlHwsFCFB1cmNoYXNlHwVnHwoFFi9QdXJjaGFzZS9EZWZhdWx0LmFzcHhkZAIRDxYCHwZoZAIDD2QWDgIBDxAPFgIfB2dkEBUECVNwaXJhVGVzdAlTcGlyYVBsYW4JU3BpcmFUZWFtDFJlbW90ZUxhdW5jaBUEATEBMgEzATQUKwMEZ2dnZxYBZmQCAw8QDxYCHgdDaGVja2VkZ2RkZGQCCQ88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AgceCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCB2QWAmYPZBYOAgEPZBYGZg8PFgIfCAUPRXhwcmVzcyBTdXBwb3J0ZGQCAQ8PFgIfCAUvMSB5ZWFyIG9mIGVtYWlsL3Bob25lIHN1cHBvcnQgYW5kIGZyZWUgdXBncmFkZXNkZAICD2QWAmYPFQEGJDQ5Ljk5ZAICD2QWBmYPDxYCHwgFD0Vjb25vbXkgU3VwcG9ydGRkAgEPDxYCHwgFLzEgeWVhciBvZiBlbWFpbC9waG9uZSBzdXBwb3J0IGFuZCBmcmVlIHVwZ3JhZGVzZGQCAg9kFgJmDxUBBiQ5OS45OWQCAw9kFgZmDw8WAh8IBRBTdGFuZGFyZCBTdXBwb3J0ZGQCAQ8PFgIfCAUvMSB5ZWFyIG9mIGVtYWlsL3Bob25lIHN1cHBvcnQgYW5kIGZyZWUgdXBncmFkZXNkZAICD2QWAmYPFQEHJDE5OS45OWQCBA9kFgZmDw8WAh8IBRRQcm9mZXNzaW9uYWwgU3VwcG9ydGRkAgEPDxYCHwgFLzEgeWVhciBvZiBlbWFpbC9waG9uZSBzdXBwb3J0IGFuZCBmcmVlIHVwZ3JhZGVzZGQCAg9kFgJmDxUBByQyOTkuOTlkAgUPZBYGZg8PFgIfCAUPUHJlbWl1bSBTdXBwb3J0ZGQCAQ8PFgIfCAUvMSB5ZWFyIG9mIGVtYWlsL3Bob25lIHN1cHBvcnQgYW5kIGZyZWUgdXBncmFkZXNkZAICD2QWAmYPFQEHJDQ5OS45OWQCBg9kFgZmDw8WAh8IBRRQcmVtaXVtIFBsdXMgU3VwcG9ydGRkAgEPDxYCHwgFLzEgeWVhciBvZiBlbWFpbC9waG9uZSBzdXBwb3J0IGFuZCBmcmVlIHVwZ3JhZGVzZGQCAg9kFgJmDxUBByQ1OTkuOTlkAgcPZBYGZg8PFgIfCAUSRW50ZXJwcmlzZSBTdXBwb3J0ZGQCAQ8PFgIfCAUvMSB5ZWFyIG9mIGVtYWlsL3Bob25lIHN1cHBvcnQgYW5kIGZyZWUgdXBncmFkZXNkZAICD2QWAmYPFQEHJDc5OS45OWQCFQ8WAh8GaGQYBAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgkFJ2N0bDAwJHVjTWFpbk5hdmlnYXRpb24kYnRuSW5mbGVjdHJhTG9nbwVAY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRycHRNYWluTmF2aWdhdGlvbiRjdGwwMCRidG5OYXZpZ2F0aW9uTGluawVAY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRycHRNYWluTmF2aWdhdGlvbiRjdGwwMiRidG5OYXZpZ2F0aW9uTGluawVAY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRycHRNYWluTmF2aWdhdGlvbiRjdGwwNCRidG5OYXZpZ2F0aW9uTGluawVAY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRycHRNYWluTmF2aWdhdGlvbiRjdGwwNiRidG5OYXZpZ2F0aW9uTGluawVAY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRycHRNYWluTmF2aWdhdGlvbiRjdGwwOCRidG5OYXZpZ2F0aW9uTGluawUgY3RsMDAkY3BsTWFpbkNvbnRlbnQkcmFkRG93bmxvYWQFJWN0bDAwJGNwbE1haW5Db250ZW50JHJhZEhvc3RlZFNlcnZpY2UFJWN0bDAwJGNwbE1haW5Db250ZW50JHJhZEhvc3RlZFNlcnZpY2UFKGN0bDAwJGNwbE1haW5Db250ZW50JGdyZFN1YnNjcmlwdGlvbkxpc3QPZ2QFI2N0bDAwJGNwbE1haW5Db250ZW50JGdyZFByb2R1Y3RMaXN0DzwrAAwBCAIBZAUtY3RsMDAkdWNNYWluTmF2aWdhdGlvbiRtbnVTZWNvbmRhcnlOYXZpZ2F0aW9uDw9kBQhQdXJjaGFzZWTi+5XWJ3a8qKgF6nLSOrpb6mBX7RjeHLIdL4lONKw2RQ==</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">__VIEWSTATE</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="ctl00$cplMainContent$ddlProducts">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">3</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">ctl00$cplMainContent$ddlProducts</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="ctl00$cplMainContent$DownloadOrService">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">radDownload</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">ctl00$cplMainContent$DownloadOrService</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">www.inflectra.com</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/Purchase/Default.aspx</stringProp>
+<stringProp name="HTTPSampler.method">POST</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+<collectionProp name="Asserion.test_strings">
+<stringProp name="pattern">(?i)Purchase Our Products Online</stringProp>
+</collectionProp>
+<stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+<stringProp name="Assertion.assume_success">false</stringProp>
+<intProp name="Assertion.test_type">2</intProp>
+</ResponseAssertion>
+<hashTree />
+</hashTree>
+</hashTree>
+</hashTree>
+</hashTree>
+</jmeterTestPlan>
